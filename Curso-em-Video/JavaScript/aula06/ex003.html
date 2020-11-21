@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro Programa...</title>
+
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font: normal 20px Arial;
+        }
+
+        h1 { 
+            color: rgb(0, 255, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <p>Já me livrei da maldição ;)</p>
+
+    <script>
+        // Number.parseFloat -> Converte para um número real.
+        // Number.parseInt -> Coverte para um número inteiro.
+        // Number -> O javaScript decide e converte automaticamente se for Inteiro ou Real
+        var n1 = Number(window.prompt("Digite o primeiro número: "))
+        var n2 = Number(window.prompt("Digite o segundo número: "))
+        var soma = n1 + n2
+        // (number + number) para adição.
+        // (string + string) para concatenação. 
+        alert(`O resultado da soma de ${n1} + ${n2} é igual a ${soma}`) //template string
+    </script>
+</body>
+</html>

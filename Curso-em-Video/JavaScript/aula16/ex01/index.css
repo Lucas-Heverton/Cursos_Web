@@ -1,0 +1,47 @@
+body {
+    background-image: radial-gradient(circle at center center, rgba(33,33,33,0),rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 1px,transparent 1px, transparent 4px),repeating-linear-gradient(45deg, rgb(56,56,56) 0px, rgb(56,56,56) 5px,transparent 5px, transparent 6px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
+    font: normal 18px 'Roboto';
+}
+
+header {
+    color: #fff;
+    text-align: center;
+}
+
+section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 550px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 10px #646464;
+}
+
+select#contador {
+
+    margin: 15px 0px;
+}
+
+#res-dois {
+    margin: 0 auto;
+    width: 360px;
+    border: solid 1px #565151;
+    display: none;
+}
+#contador {
+    width: 150px;
+}
+
+#res-dois > p {
+    text-align: center;
+}
+
+b {
+    color: #f00;
+    font-weight: 500;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: 300 18px Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var line = `<br/>`;
+        var nome = window.prompt("Qual é o seu nome ?");
+        document.writeln(`${nome} seu nome tem ${nome.length} letras. ${line}`); //template String
+        document.writeln(`Seu nome em letras maiusculas: ${nome.toUpperCase()} ${line}`); //template String
+        document.writeln(`Seu nome em letras minusculas: ${nome.toLocaleLowerCase()} ${line}${line}`); //template String
+
+        //parseFloat converte para um número do tipo real
+        //toFixed define o número de casas depois da virgula
+        // Formatando o dinheiro para Dolar, real, euro
+        var dinheiro = Number(463899.787).toLocaleString('pt-BR', {style: 'currency', currency: 'USD'});
+        //.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})
+        //.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+
+        document.write(`Você possui na sua conta ${dinheiro} reais`); //template String
+</script>
+</body>
+</html>

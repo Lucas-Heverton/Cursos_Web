@@ -1,0 +1,23 @@
+body {
+    background-color: #000000 ;
+    font: normal 18px 'Roboto' ;
+}
+
+header {
+    color: #fff;
+    text-align: center;
+}
+
+section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 10px #646464;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+}
