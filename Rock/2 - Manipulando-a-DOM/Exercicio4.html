@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+</head>
+
+<body>
+    <!-- feito no javaScript
+    <ul></ul>
+    <input type="text" name="nome" placeholder="Digite seu nome ...">
+    <button onclick="adicionar()">Adicionar</button> -->
+    <script>
+        // criando os elementos
+
+        var inputElement = document.createElement('input');
+        inputElement.setAttribute('type', 'text');
+        inputElement.setAttribute('name', 'nome');
+        inputElement.setAttribute('placeholder', 'Digite seu nome...');
+
+        var buttonElement = document.createElement('button');
+        buttonElement.setAttribute('onclick', 'adicionar()');
+        var textoButton = document.createTextNode('Adicionar');
+        buttonElement.appendChild(textoButton);
+
+        var ulElement = document.createElement('ul');
+
+        var boxInput = document.body;
+        boxInput.appendChild(inputElement);
+
+        var boxButton = document.body;
+        boxButton.appendChild(buttonElement);
+
+        var boxUl = document.body;
+        boxUl.appendChild(ulElement);
+
+        var exibirEstilo = document.querySelector('input');
+        exibirEstilo.style.marginRight = '5px';
+
+//----------------------------------------------------------------------------------
+        var capUl = document.querySelector('ul');
+        var inputElem = document.querySelector('input');
+
+        function addItem(text) {
+            var liElement = document.createElement('li');
+            var textElement = document.createTextNode(text);
+
+            liElement.appendChild(textElement);
+            capUl.appendChild(liElement);
+        }
+
+        function adicionar() {
+            addItem(inputElem.value);
+            inputElem.value = "";
+        }
+
+        for (nome of nomes) {
+            addItem(nome);
+        }
+    </script>
+</body>
+
+</html>

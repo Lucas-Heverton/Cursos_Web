@@ -1,0 +1,54 @@
+html {
+    background-image: repeating-linear-gradient(135deg, rgb(255,255,255) 0px, rgb(255,255,255) 10px,transparent 10px, transparent 11px),repeating-linear-gradient(22.5deg, rgb(255,255,255) 0px, rgb(255,255,255) 10px,transparent 10px, transparent 11px),linear-gradient(90deg, hsl(194,74%,56%),hsl(266,74%,56%),hsl(338,74%,56%),hsl(50,74%,56%),hsl(122,74%,56%));
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 18px
+}
+
+.container__list {
+    display: grid;
+    place-items: center;
+}
+
+#app {
+    display: block;
+    text-align: center;
+}
+
+#app ul {
+    display: grid;
+
+}
+
+#app ul li {
+    display: inline-flex;
+    list-style-type: decimal;
+    align-items: center;
+}
+input {
+    vertical-align: text-bottom;
+    width: 230px;
+}
+
+.add {
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.add img {
+    vertical-align: bottom;
+}
+
+#trash-image {
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+

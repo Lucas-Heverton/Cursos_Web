@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+</head>
+<body>
+    
+    <script>
+        //forma que eu fiz
+        var nomes = ["Diego", "Gabriel", "Lucas"];
+        
+        var elementul = document.createElement('ul');
+
+            for(let i = 0; i < 3; i++){
+            var elementli = document.createElement('li');
+            var textLi = document.createTextNode(nomes[i]);
+            elementli.appendChild(textLi);           
+            elementul.appendChild(elementli);
+        }
+
+        var exibirDom = document.body;
+        exibirDom.appendChild(elementul);
+
+
+        //forma mais fácil
+        var nomes = ["Diego", "Gabriel", "Lucas"];
+        document.body.innerHTML += `<ul>${nomes.map(a => `<li>${a}</li>`).join('')}</ul>`;
+    </script>
+</body>
+</html>

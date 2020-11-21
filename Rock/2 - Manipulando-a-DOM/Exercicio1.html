@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+</head>
+<body>
+
+    <script>
+        //Criando button
+        var buttonElement = document.createElement('button');
+
+        //aplicando title e a função onclick no button
+        buttonElement.setAttribute('title', 'Botão');
+        buttonElement.setAttribute('onclick', 'clickButton()');
+
+        //criando um texto dentro do botão
+        var textButton = document.createTextNode('Pressione');
+
+        //aplicando o texto dentro do botão 
+        buttonElement.appendChild(textButton);
+
+        //aplicando o button dentro da DOM
+        var containerElement = document.querySelector('body');
+        containerElement.appendChild(buttonElement);
+
+        //função para criar um elemento cada vez que o botão é pressionado
+        function clickButton() {
+            var boxContainer = document.createElement('div');
+
+            var insertDom = document.querySelector('body');
+            insertDom.appendChild(boxContainer);
+
+            boxContainer.style.width = '100px';
+            boxContainer.style.height = '100px';
+            boxContainer.style.backgroundColor = '#f00';
+            boxContainer.style.margin = '10px';
+        }        
+    </script>
+    
+</body>
+</html>

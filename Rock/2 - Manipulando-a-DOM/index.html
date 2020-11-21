@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando a DOM</title>
+</head>
+<body>
+    <!--
+    <button onclick="pressione()"> Clique Aqui</button> <!-- mostra o alert da função quando o botão é clicado
+    <button onmouseover="pressione()"> Clique Aqui</button> // mostra o alert da função quando é passado o mouse em cima do elemento
+    <div>
+        <input type="text" class="name" name="campo" id="referent" placeholder="Escreva aqui" /> 
+        <button>Resgatar</button>
+    </div>
+
+    <div id="app">
+
+    </div>
+    -->
+
+    <div class="container"></div>
+    <Script>
+/* Evento de click
+function pressione(){
+    alert("Você foi alertado!") //acontece quando clica no botão
+
+____________________________________________________________________________________________________________
+
+    var inputElement = document.getElementById("referent").innerHTML = 'Texto aleatorio';
+    console.log(inputElement);
+
+    var inputElement = document.getElementsByTagName("input"[0]).innerHTML = 'Texto aleatorio 2';
+    console.log(inputElement);
+
+    var inputElement = document.getElementsByClassName("name").innerHTML = 'Texto aleatorio 3';
+    console.log(inputElement);
+
+    var inputElement = document.querySelector("body div input#referent ").innerHTML = 'Texto aleatorio 4';
+    console.log(inputElement);
+
+    var inputElement = document.querySelector("input[name=campo]").innerHTML = 'Texto aleatorio 5';
+    console.log(inputElement);    
+
+    var inputElement = document.querySelector("input[name=campo]")
+    var btnElement = document.querySelector("button");
+
+    btnElement.onclick = function() {
+        var text = inputElement.value;
+        alert(text);
+    }
+
+____________________________________________________________________________________________________________
+
+    //criando a tag a no html
+    var linkElement = document.createElement('a');
+    
+    //atribuindo o href ao elemento a passando no href o site da rocketseat
+    linkElement.setAttribute('href', 'https://rocketseat.com.br');
+
+    //atribuindo o target e passando o _blank para a página abrir em outra aba
+    linkElement.setAttribute('target', '_blank');
+
+    //atribuindo o title passando o nome para exibir na tag a
+    linkElement.setAttribute('title', 'Site da Rocketseat')
+
+    // colocar o texto no elemento a
+    var textElement = document.createTextNode("Acessar o site");
+
+    // posicionado o texto dentro do link.
+    linkElement.appendChild(textElement);
+
+    //jogando o linkElement dentro do corpo do html para ele exibir na DOM
+    var containerElement = document.querySelector('#app');
+    containerElement.appendChild(linkElement);
+
+____________________________________________________________________________________________________________
+
+    //css no javaSript
+
+    var box = document.querySelector('.container');
+    box.style.width = '100px';
+    box.style.height = '100px';
+    box.style.backgroundColor = '#f00';
+    box.style.opacity = '0.8';
+
+    */
+
+    
+    </Script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+</head>
+
+<body>
+
+    <script>
+        //Criando button
+        var buttonElement = document.createElement('button');
+
+        //aplicando title e a função onclick no button
+        buttonElement.setAttribute('title', 'Botão');
+        buttonElement.setAttribute('onclick', 'clickButton()');
+
+        //criando um texto dentro do botão
+        var textButton = document.createTextNode('Pressione');
+
+        //aplicando o texto dentro do botão 
+        buttonElement.appendChild(textButton);
+
+        //aplicando o button dentro da DOM
+        var containerElement = document.querySelector('body');
+        containerElement.appendChild(buttonElement);
+
+        
+        var boxContainer;
+
+        function clickButton() {
+            boxContainer = document.createElement('div');
+            boxContainer.setAttribute('onmouseover', 'getRandomColor()');
+
+            var insertDom = document.querySelector('body');
+            insertDom.appendChild(boxContainer);
+            
+            boxContainer.style.width = '100px';
+            boxContainer.style.height = '100px';
+            boxContainer.style.backgroundColor = '#f00';
+            boxContainer.style.margin = '10px';
+                   
+        }
+
+        function getRandomColor() {
+            var letters = "0123456789ABCDEF";
+            var color = "#";
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return boxContainer.style.backgroundColor = color ;
+        }
+
+        
+        
+    
+    </script>
+</body>
+
+</html>
