@@ -1,2 +1,2 @@
 # Cursos_Web
-aaaaaaaaaaaaaaa
+Curso em Video, Rocketseat, Udemy e Origamid. HTML5, CSS3 e JavaScript
