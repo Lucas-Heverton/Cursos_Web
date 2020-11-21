@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Especificidade CSS</title>
+    <style>
+        /* https://specificity.keegan.st/ */
+        /* 
+        Especificidade CSS:
+
+        1. Inline
+        2. Id
+        3. Classes, Pseudo-Classe e Atributos
+        4. Elemento e Pseudo-Elementos
+
+        Lembrando que, se o nível de especifidade foi maior, não importa em que posição o código 
+        está ele vai sobrescrever, a ordem só importa se forem do mesmo nível de especifidade [empate]
+        e o último escrito vai renderizar.
+        */
+
+        body {
+            font-size: 40px;
+        }
+
+        div {
+            background-color: cyan;
+            color: #000;
+        }
+
+        div[wm-cor] {
+            background-color: darkorange;
+        }
+
+        div.estilo {
+            background-color: green;
+        }
+        
+        div:hover {
+            background-color: purple;
+            cursor: pointer;
+        }
+
+        #unico1, #unico2 {
+            background-color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="unico1" class="estilo" style="background-color: red;">
+        #unico1 vs .estilo vs inline
+    </div>
+    <div id="unico2" class="estilo">#unico2 vs .estilo</div>
+    <div class="estilo" wm-cor>.estilo vs wm-cor</div>
+    <div wm-cor>wm-cor</div>
+    <div class="estilo">.estilo</div>
+    <div>elemento</div>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios HTML</title>
+    <style>
+        html {
+            background-color:#f8f8ff;
+        }
+        
+        #conteudo {
+            padding: 25px 0px;
+        }
+
+        .barra {
+            color: #000;  
+        }
+
+        .box__nav {
+            border:solid 1px #000;
+            padding: 7px;
+            margin: 10px;
+            width: 80vw;
+            box-shadow: 5px 10px 18px 3px #ccc;
+            text-align: center;
+        }
+
+        .box__nav > a {
+            text-decoration: none;
+            color: #ff00ea; 
+            font-weight: bold;
+            font-size: 1rem;
+          
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <h1>Exercícios HTML</h1>
+    </header>
+    <nav class="box__nav">
+        <a href="exercicios/teste.html">00 - Teste</a> <span class="barra">||</span>
+        <a href="exercicios/texto1.html">01 - Texto 1</a> <span class="barra">||</span>
+        <a href="exercicios/texto2.html">02 - Texto 2</a> <span class="barra">||</span>
+        <a href="exercicios/listas.html">03 - Listas</a> <span class="barra">||</span>
+        <a href="exercicios/listaAninhada.html">04 - Listas Aninhadas</a> <span class="barra">||</span>
+        <a href="exercicios/links.html">05 - Links</a> <span class="barra">||</span>
+        <a href="exercicios/tabela.html">06 - Tabela</a> <span class="barra">||</span>
+        <a href="exercicios/form/form.html">07 - Formulário</a> <span class="barra">||</span>
+        <a href="exercicios/imagens.html">08 - Imagens</a> <span class="barra">||</span>
+        <a href="exercicios/imagens2.html">09 - Carousel</a> <span class="barra">||</span>
+        <a href="exercicios/video.html">10 - Video</a> <span class="barra">||</span>
+        <a href="exercicios/tagsNaoVisuais.html">11 - Tags Não Visuais</a>
+    </nav>
+    <section id="conteudo"></section>
+    <footer>
+        <div><img width="120" height="auto" src="imgs/my.png" alt="logo"></div>
+    </footer>
+    <script>
+        document.querySelectorAll('a').forEach(link => {
+            const conteudo = document.getElementById('conteudo')
+
+            link.onclick = function(e) {
+                e.preventDefault()
+                fetch(link.href)
+                    .then(resp => resp.text())
+                    .then(html => conteudo.innerHTML = html)
+            }
+        })
+    </script>
+</body>
+</html>

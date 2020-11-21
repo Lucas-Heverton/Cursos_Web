@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="css/tag.css">
+    <style>
+        /* Seletor Universal --> 'asterisco' */
+       
+        /* Classe --> '.' */
+        
+        /* Id --> '#' */
+        
+        /* #aninhado > div {} ---> Seleciona dentro do Id o filho 'div' e aplica o estilo  */
+
+        /* #aninhado section {} ---> Seleciona dentro do Id qualquer elemento que tenha section e aplica o estilo */
+
+        /* p + ul {} --> irmãos próximos, ou seja quando eu tenho um p ao lado de um ul que são do mesmo pai é aplicado o estil0 somente no ul */
+
+        /* p ~ ol {} --> irmãos, independente se estão próximos ou não, se p estiver em 1º e ol estiver em 4º é aplicado se forem do mesmo pai, o estilo somente para ol*/
+
+        /* [feira] {} --> é passada a propriedade feira entre chaves e aplicada no caso desse html para os dois ul  */
+
+        /* [feira=casa] {} --> é passada a propriedade específica feira mais o valor que no caso seria casa e aplicada somente para o valor casa */
+
+        /* [feira*=sa] {} -- se dentro da propriedade específica feira estiver qualquer valor igual a 'sa' ele aplica o estilo, no caso empresa e casa tem 'sa' */
+
+        /* p:nth-child(1) {} --> pega o primeiro filho de alguém que é o tipo 'p' e aplica o estilo */
+        
+        /* section > :nth-child(odd) {} --> eu tenho uma 'section' ela seleciona todos os filhos ímpares e aplica o estilo. */
+
+        /* section > :nth-child(even) {} --> eu tenho uma 'section' ela seleciona todos os filhos pares e aplica o estilo. */
+
+        /* section > span:nth-of-type(2) {} --> dentro de section seleciona o segundo elemento 'span' e aplica o estilo */
+
+         section > span:nth-of-type(2) {
+            color: yellow;
+            background-color: turquoise;
+        }
+    </style>
+</head>
+
+<body>
+    <div class='tag'>
+        <div class='tag nolabel'>
+            <p class='tag'>1</p>
+            <ul class='tag' feira='casa'>
+                <li>Arroz</li>
+                <li>Feijão</li>
+            </ul>
+            <ul class='tag' feira='escritorio empresa'>
+                <li>Café</li>
+                <li>Água</li>
+            </ul>
+            <ol id='aprovados' class='tag'>
+                <li>Maria</li>
+                <li>Pedro</li>
+                <li>Ana</li>
+            </ol>
+            <div id='aninhado' class='tag'>
+                <div class="tag">
+                    <section class='tag nolabel'>
+                        <span class='tag'>1</span>
+                        <p class='tag'>2</p>
+                        <span class='tag'>3</span>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/tag.js"></script>
+</body>
+
+</html>

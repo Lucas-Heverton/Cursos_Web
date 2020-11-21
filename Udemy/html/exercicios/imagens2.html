@@ -1,0 +1,100 @@
+<h1>Carousel de Imagens</h1>
+
+<div class="carousel">
+    <button class="carousel__button carousel__button--left">
+        <img src="https://image.flaticon.com/icons/svg/2089/2089638.svg"  alt="L" width="10px" height="auto">
+    </button>
+    <div class="carousel__track-container">
+        <ul class="carousel__track">
+            <li class="carousel__slide">
+                <img class="carousel__image" id="1" src="https://cdn.pixabay.com/photo/2012/10/29/15/36/ball-63527_1280.jpg" alt="Logo">
+            </li>
+            <li class="carousel__slide">
+                <img class="carousel__image" id="2" src="https://cdn.pixabay.com/photo/2017/02/19/23/10/finger-2081169_1280.jpg" alt="Logo">
+            </li>
+            <li class="carousel__slide">
+                <img class="carousel__image" id="3" src="https://cdn.pixabay.com/photo/2018/05/16/20/07/technology-3406895_1280.jpg" alt="Logo">
+            </li>
+        </ul>
+    </div>
+    <button class="carousel__button carousel__button--right">
+        <img src="https://image.flaticon.com/icons/svg/2089/2089640.svg" alt="R" width="10px" height="auto">
+    </button>
+    <div class="carousel__nav">
+        <button class="carousel__indicator current-slide"></button>
+        <button class="carousel__indicator "></button>
+        <button class="carousel__indicator "></button>
+    </div>
+</div>
+
+<style>
+    .carousel {
+        position: relative;
+        height: 600px;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .carousel__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .carousel__track-container {
+        background: lightgreen;
+        height: 100%;
+        position: relative;
+    }
+    .carousel__track {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    .carousel__slide {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    .carousel__button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+    }
+
+    .carousel__button--left {
+        left: -40px;
+    }
+
+    .carousel__button--right {
+        right: -40px;
+    }
+
+    .carousel__button img {
+        width: 12px;
+    }
+
+    .carousel__nav {
+        /* background-color: pink; */
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    .carousel__indicator {
+        border: 0;
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        background:rgba(0,0,0,.3); 
+        margin: 0 12px;
+    }
+
+    .carousel__indicator.current-slide {
+        background: rgba(20, 3, 170, 0.3);
+    }
+</style>
+
+</script>

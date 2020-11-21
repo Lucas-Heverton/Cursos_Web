@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Trabalhando com Eventos #01</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+</head>
+
+<body class="conteudo exercicio">
+    <div>
+        <a wm-click href="https://google.com.br" target="_blank">Google</a>
+    </div>
+    <script>
+        const texto = 'Saindo em 3 Segundos meu chapa'
+        function navegarEm (e) {
+            e.preventDefault(
+                console.log(texto)
+            )
+            setTimeout(() => {
+                const link = e.target
+                window.location.href = link.href
+            }, 3000)
+        }
+
+        /* não é viavél colocar classe para aplicar JS e sim 
+        propriedades, classes e id são geralemente usados no css*/
+        
+        //estrategia para não colocar o onclick direto na tag
+        
+        /* const a = document.querySelector('a') // por tag
+        a.onclick = navegarEm */
+
+        const a = document.querySelector('[wm-click]') //por propriedade
+        a.onclick = navegarEm;
+    </script>
+</body>

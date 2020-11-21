@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Especificidade CSS</title>
+    <style>
+        /* https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity */
+        /* 
+        Em linhas gerais ...
+
+        1. Regras com !important
+        2. Seletores mais específicos
+        3. Última regra processada (empate)
+      
+
+        A o elmento 'p' junto com a classe .observacao é mais específica que o elemento e a classe 'p' sozinhos por isso é sobrescrita e aplicada independente da ordem que foi colocada.
+
+        */
+        p {
+            background-color:  #ccc;
+        }
+
+        .observacao {
+            background-color: chocolate;
+            border: dashed 3px;
+            padding: 10px;
+            font-size: 30px;
+        }
+
+        p.observacao {
+            width: 40%;
+            height: 10%;
+            background-color: cornflowerblue;
+            padding: 20px 20px;
+            font-weight: bolder;
+            border: double 5px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <p class='observacao'>Olha essa observação!!!!</p>
+</body>
+
+</html>
