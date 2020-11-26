@@ -1,44 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outras Formatações</title>
+    <title>Listas</title>
 </head>
+<body style="margin-left: 20px ;">
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas ordenadas (ol)</h2>
+    <ol type="1" start="2"> <!-- 1 | A | a | I | i -->
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar Café</li>
+        <li>Escovar os Dentes</li>
+        <li>Trabalhar</li>
+    </ol>
 
-<body>
-    <h1>Outras Formatações</h1>
-    <h2>Código Fonte / Pré-Formatação</h2>
-    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript</p>
+    <h2>Listas Não Ordenadas (ul)</h2>
+    <ul type="circle"> <!-- disk | circle | square | none -->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Feijão</li>
+        <li>Arroz</li>
+    </ul>
 
-    <pre> <!-- Organiza o documento do jeito que ele foi escrito -->
-        <code> <!-- lê como cógigo -->
-    num = int(input('Digite um número'))
-    if num % 2 == 0;
-        printf(f'O número {num} é PAR')
-    else:
-        printf(f'O número {num} é ÍMPAR')
-    printf('Fim do programa')
-        </code>
-    </pre>
-
-    <h2>Citações</h2>
-    <p>
-        <q>Como diria o pai de um amigo: o computador é um burro muito rápido.</q> <!-- Citação simples -->
-    </p>
-
-    <h2>Citações completas</h2>
-    <p>Segundo Preston Prescott, no seu livro HTML5:</p>
-    <blockquote cite="https://books.google.com.br/books?id=5OyNCgAAQBAJ&pg=PT10&dq=HTML&hl=pt-BR&sa=X&ved=2ahUKEwiKq5-A3JvtAhVmGrkGHVNrAecQ6AEwAnoECAYQAg#v=onepage&q&f=false">
-        É muito fácil criar um parágrafo em HTML 5. Deve colocar-se uma tag de abertura e fechamento p.
-    </blockquote>
-
-    <h2>Abreviações</h2>
-    <p>Estou estudando <abbr title="HyperText Markup Language">HTML5</abbr> e <abbr title="Cascaging Style Sheets">CSS3</abbr>. Ótimo.</p>
-
-    <h2>Texto invertido</h2>
-    <p><bdo dir="ltr">Estou aprendendo a criar documento em HTML5.</bdo></p>
+    <h2>Listas de Definição</h2>
 </body>
-
 </html>
