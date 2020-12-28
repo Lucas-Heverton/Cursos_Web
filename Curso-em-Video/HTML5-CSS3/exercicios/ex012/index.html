@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+</head>
+<style>
+    video {
+        width: 600px;
+        height: auto;
+    }
+</style>
+
+<body>
+    <h1>Vídeos com HTML5</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+
+    <!-- <video src="media/meu-video.mp4" controls autoplay poster="imagem/banner-skate.jpg"></video> -->
+
+    <video controls autoplay loop poster="imagem/banner-skate.jpg">
+        <source src="media/meu-video.mp4" type="video/mp4">
+        <source src="media/meu-video.webm" type="video/webm">
+        <source src="media/meu-video.ogg" type="video/ogg">
+    </video>
+
+    <h1>Inserindo Vídeos do youtube.</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2iaPuUFIyMo?start=5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>Inserindo Vídeos do Vimeo.</h1>
+    <iframe src="https://player.vimeo.com/video/153187817?autoplay=1&loop=1&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<p>My current animation reel as of March 2016.</p>
+    
+</body>
+</html>
